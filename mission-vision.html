@@ -3,43 +3,245 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cosmic Accords - Disclaimer</title>
+    <title>Accords - Cosmic Accords</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
-        body { background: linear-gradient(180deg, #0a0a23, #1a1a4d); color: #fff; line-height: 1.6; }
-        header { background: url('images/multiverse-background.jpg') no-repeat center/cover; height: 40vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 20px; }
-        .logo { max-width: 150px; margin-bottom: 10px; }
-        header h1 { font-size: 2.5rem; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); }
-        nav { background: rgba(0, 0, 0, 0.5); padding: 10px; text-align: center; }
-        nav a { color: #ffd700; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        nav a:hover { color: #ff6f61; }
-        section { padding: 40px 20px; max-width: 1200px; margin: auto; }
-        .content { background: rgba(255, 255, 255, 0.1); border-radius: 10px; padding: 30px; }
-        p { margin-bottom: 15px; }
-        footer { background: #0a0a23; text-align: center; padding: 20px; font-size: 0.9rem; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background: linear-gradient(180deg, #0a0a23, #1a1a4d);
+            color: #fff;
+            line-height: 1.6;
+        }
+        header {
+            background: url('images/multiverse-accords.jpg') no-repeat center/cover; /* Green and silver parallel universes */
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+        .logo {
+            max-width: 150px;
+            margin-bottom: 10px;
+        }
+        header h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        header p {
+            font-size: 1.3rem;
+            max-width: 700px;
+            margin: 10px auto;
+        }
+        nav {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #ffd700;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ff6f61;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ffd700;
+        }
+        .accordion {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            text-align: left;
+            border: none;
+            outline: none;
+            transition: 0.4s;
+            font-size: 1.5rem;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .accordion:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        .panel {
+            padding: 0 18px;
+            background-color: rgba(255, 255, 255, 0.05);
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            border-radius: 0 0 10px 10px;
+        }
+        .panel p, .panel ul {
+            padding: 10px 0;
+        }
+        .panel h3 {
+            font-size: 2rem;
+            color: #ff6f61;
+            margin-bottom: 15px;
+        }
+        .panel ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        footer {
+            background: #0a0a23;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            header p {
+                font-size: 1rem;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
         <img src="images/logo.png" alt="Cosmic Accords Logo" class="logo">
-        <h1>Disclaimer</h1>
+        <h1>Accords</h1>
+        <p>In the infinite expanse where humongous multiverses collide like titanic lovers in a dance of creation and chaos, birthing new realities from their fiery embrace, Cosmic Accords weaves pacts that transcend time, space, and dimension. These luminous threads pull disparate worlds into harmonious symphonies, igniting stars of hope across the cosmos. Click each folder to unveil the visions within.</p>
     </header>
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="mission-vision.html">Mission & Vision</a>
-        <a href="privacy.html">Privacy Policy</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="disclaimer.html">Disclaimer</a>
     </nav>
     <section>
-        <div class="content">
-            <p>In the boundless expanse where multiverses whirl in chaotic beauty, Cosmic Accords LLC offers visions as luminous suggestions, not binding decrees. Our proposed accords and events are imaginative constellations, crafted to inspire unity, but they hold no legal gravity or official endorsement from governments, faiths, or cosmic entities.</p>
-            <p>We weave these dreams with care, yet disclaim liability for any ripples—be they misinterpreted signals, event disruptions from unforeseen black holes, or outcomes in parallel realities. Participation is your quantum leap; consult advisors before traversing our portals.</p>
-            <p>Content on cosmicaccords.com dances in the public domain of inspiration, but remains our intellectual nebula. External links are wormholes to other realms—we vouch not for their stability.</p>
-            <p>For inquiries into this ethereal veil, contact info@cosmicaccords.com. May your path be starlit and serene.</p>
+        <h2>All Cosmic Accords</h2>
+        <button class="accordion">The Heavenization of Earth</button>
+        <div class="panel">
+            <h3>The Heavenization of Earth: The Celestial Ascension Pact</h3>
+            <p>Picture Earth as a radiant jewel suspended in the cosmic void, its skies shimmering with auroras of unity, where every soul ascends to a plane of divine harmony. The Heavenization of Earth is a bold vision to transmute our planet into a celestial sanctuary, where hatred dissolves like mist and love radiates like a supernova, uniting all beings in a divine tapestry woven across multiverses.</p>
+            <ul>
+                <li><strong>Celestial Sanctuaries</strong>: Transform cities into sacred havens, like Jerusalem and Mecca, where interfaith temples pulse with shared prayers, becoming gateways to higher dimensions.</li>
+                <li><strong>Abundance Nebula</strong>: Eradicate scarcity by channeling cosmic resources—solar winds powering global gardens, ensuring no child hungers under starlit skies.</li>
+                <li><strong>Heavenly Festivals</strong>: Global celebrations where humanity dances under celestial canopies, blending rituals into a singular hymn of oneness, resonating through parallel realms.</li>
+                <li><strong>Stellar Youth Ascension</strong>: Empower children with "Celestial Codex"—virtual academies teaching unity, empathy, and cosmic stewardship, igniting souls as bright as quasars.</li>
+                <li><strong>Ethereal Disarmament</strong>: Melt weapons into radiant sculptures, forging a planet-wide peace zone where conflicts vanish into the ether, sealed by divine trust.</li>
+            </ul>
+            <p>This pact is the alchemy of Earth’s soul, lifting it to a heavenly plane where multiverses converge in eternal light.</p>
         </div>
-    </section>
-    <footer>
-        <p>© 2025 Cosmic Accords LLC. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+
+        <button class="accordion">The Interfaiths Event in Jerusalem</button>
+        <div class="panel">
+            <h3>The Interfaiths Event in Jerusalem: The Cosmic Convergence Summit</h3>
+            <p>Envision Jerusalem’s ancient stones vibrating with the songs of a thousand faiths, as leaders and dreamers gather under a sky where multiverses merge, their lights entwining like lovers in cosmic embrace. This landmark event, set for 2026, is a supernova of unity, where Judaism, Islam, Christianity, Hinduism, Druze, and all beliefs fuse into a singular pulse of peace.</p>
+            <ul>
+                <li><strong>Sacred Unity Forum</strong>: A grand council in the Old City, where spiritual leaders weave shared doctrines into a cosmic tapestry, broadcast across dimensions via holographic streams.</li>
+                <li><strong>Harmony Marketplace</strong>: A bazaar blending Jerusalem’s shuks with global crafts, funding hunger relief through interfaith trade under starlit domes.</li>
+                <li><strong>Multiversal Ceremonies</strong>: Rituals at the Western Wall, Dome of the Rock, and beyond, where prayers interlace like galaxies, creating a symphony of reverence.</li>
+                <li><strong>Youth Cosmic Circles</strong>: Young visionaries design "Unity Portals"—VR experiences simulating a peaceful Jerusalem, inspiring futures free of division.</li>
+                <li><strong>Peace Flame Accord</strong>: A ceremonial vow to disarm hearts and minds, kindling a flame of trust that burns brighter than any star.</li>
+            </ul>
+            <p>The Interfaiths Event is the spark that ignites Jerusalem as the heart of a unified Earth, a beacon echoing through the multiverse.</p>
+        </div>
+
+        <button class="accordion">Middle East Accord: The Eternal Harmony Pact (Israel, Palestine, Iran, Lebanon)</button>
+        <div class="panel">
+            <h3>Middle East Accord: The Eternal Harmony Pact (Israel, Palestine, Iran, Lebanon)</h3>
+            <p>Envision ancient deserts blooming with gardens of unity, where olive branches entwine minarets and menorahs under a sky ablaze with merging galaxies. This accord dissolves borders into shimmering portals, channeling the region's storied wisdom into a symphony of shared prosperity.</p>
+            <ul>
+                <li><strong>Unity Enclaves</strong>: Sacred zones in Jerusalem and Beirut governed by interfaith dreamweavers, transforming holy sites into multidimensional hubs of reverence and dialogue.</li>
+                <li><strong>Cosmic Trade Nexus</strong>: Interlink economies from Tel Aviv's tech constellations to Tehran's poetic markets, fueling anti-hunger initiatives with stellar agriculture and infinite energy flows.</li>
+                <li><strong>Multiverse Festivals</strong>: Epic gatherings in the Jordan Valley, where rhythms from all cultures fuse into a heartbeat echoing across parallel realms.</li>
+                <li><strong>Dimension Bridges for Youth</strong>: Exchanges where children craft "Peace Nebulae"—virtual universes simulating eternal harmony, fostering empathy vast as the void.</li>
+                <li><strong>Stellar Disarmament</strong>: Phase out arms like fading stars, co-led by all nations, birthing secure zones that glow with trust's supernova light.</li>
+            </ul>
+            <p>A big bang of brotherhood, collapsing conflicts into oblivion, birthing realms of endless peace.</p>
+        </div>
+
+        <button class="accordion">Africa Accord: The Cradle of Stars Pact</button>
+        <div class="panel">
+            <h3>Africa Accord: The Cradle of Stars Pact</h3>
+            <p>From the Sahara's whispering dunes to the Congo's emerald heart, imagine Africa as a cradle rocking newborn universes, where tribal drums sync with cosmic pulses, weaving a pact that awakens the continent's ancient power in a blaze of unified glory.</p>
+            <ul>
+                <li><strong>Ancestral Unity Hubs</strong>: Revive Great Zimbabwe and Timbuktu as portals blending traditions, governed by elders from every tribe in harmonious council.</li>
+                <li><strong>Resource Galaxy</strong>: Share minerals and waters like stellar dust, eradicating hunger through pan-African farms that harvest from fertile multiversal soils.</li>
+                <li><strong>Rhythm Realms Festivals</strong>: Continent-wide celebrations where djembe beats merge with Afrobeat, summoning spirits of peace in ecstatic dance.</li>
+                <li><strong>Youth Wormhole Programs</strong>: Kids from Cape to Cairo build "Star Bridges"—AR worlds exploring shared histories, igniting futures bright as quasars.</li>
+                <li><strong>Harmony Disarmament</strong>: Melt weapons into sculptures of unity, creating safe havens that shimmer like oases in the desert of division.</li>
+            </ul>
+            <p>A rebirth of the cradle, where Africa's light illuminates the multiverse.</p>
+        </div>
+
+        <button class="accordion">Asia Accord: The Silk Nebula Treaty</button>
+        <div class="panel">
+            <h3>Asia Accord: The Silk Nebula Treaty</h3>
+            <p>Threads of silk unravel into nebulae, connecting the Himalayas' lofty peaks to Tokyo's neon dreams, forging a treaty where dragons dance with cherry blossoms in a whirlwind of merged realities.</p>
+            <ul>
+                <
+```html
+li><strong>Eternal Silk Gates</strong>: Open portals in Beijing and Delhi for cross-cultural governance, blending philosophies into a singular cosmic wisdom.</li>
+                <li><strong>Nebula Economies</strong>: Weave trade routes anew, feeding billions with abundant harvests from shared quantum fields.</li>
+                <li><strong>Dragon Lantern Festivals</strong>: Illuminated gatherings across the continent, fusing Diwali lights with Lunar New Year fireworks in explosive joy.</li>
+                <li><strong>Quantum Youth Exchanges</strong>: Young visionaries craft "Nebula Narratives"—stories bridging divides, spun in virtual threads of empathy.</li>
+                <li><strong>Serenity Disarmament</strong>: Dissolve tensions like mist, co-creating zen zones where peace flows eternal as the Ganges.</li>
+            </ul>
+            <p>A silken web ensnaring division, birthing Asia's radiant dawn.</p>
+        </div>
+
+        <button class="accordion">Europe Accord: The Renaissance Vortex Agreement</button>
+        <div class="panel">
+            <h3>Europe Accord: The Renaissance Vortex Agreement</h3>
+            <p>Cathedrals echo with symphonies as the Alps swirl into a vortex of rebirth, where Renaissance masters paint futures on canvases of merged timelines, uniting the old world in luminous accord.</p>
+            <ul>
+                <li><strong>Vortex Councils</strong>: Paris and Berlin host swirling assemblies, blending diverse voices into a masterpiece of governance.</li>
+                <li><strong>Enlightened Trade Constellations</strong>: Link markets from Lisbon to Moscow, nourishing all with bounties from enlightened soils.</li>
+                <li><strong>Renaissance Revels</strong>: Festivals in Rome and Athens, where art and music collide in ecstatic renaissance of the soul.</li>
+                <li><strong>Timeline Youth Portals</strong>: Children explore "Vortex Visions"—AR histories rewritten in harmony's ink.</li>
+                <li><strong>Peaceful Dissolution</strong>: Arms fade into artifacts, forging alliances strong as ancient oaks.</li>
+            </ul>
+            <p>A vortex sucking in strife, spewing forth Europe's golden age anew.</p>
+        </div>
+
+        <button class="accordion">Americas Accord: The Eagle and Condor Fusion</button>
+        <div class="panel">
+            <h3>Americas Accord: The Eagle and Condor Fusion</h3>
+            <p>Eagles soar with condors over Amazon mists and Rocky peaks, fusing hemispheres in a feathered embrace, where jungles whisper secrets to skyscrapers in a fusion of wild and wonder.</p>
+            <ul>
+                <li><strong>Fusion Sanctuaries</strong>: From New York to Rio, councils merge indigenous and modern wisdom in sacred spaces.</li>
+                <li><strong>Abundant Hemisphere Harvest</strong>: Share resources like migrating birds, banishing hunger with continental feasts.</li>
+                <li><strong>Feathered Carnivals</strong>: Pan-American festivals blending Mardi Gras with Inti Raymi in explosive color.</li>
+                <li><strong>Winged Youth Journeys</strong>: Kids fly through "Fusion Flights"—VR adventures uniting north and south in empathy's wings.</li>
+                <li><strong>Harmony Molting</strong>: Shed weapons like old feathers, nesting in peace across the Americas.</li>
+            </ul>
+            <p>A fusion igniting the Americas as beacons of multiversal light.</p>
+        </div>
+
+        <button class="accordion">Global Unity Accord: The Multiverse Convergence Covenant</button>
+        <div class="panel">
+            <h3>Global Unity Accord: The Multiverse Convergence Covenant</h3>
+            <p>All Earth as one, multiverses converging in a grand finale, where every nation dissolves into a singular cosmic entity, hearts beating as one under infinite skies.</p>
+            <ul>
+                <li><strong>Convergence Core</strong>: A global council in a neutral realm, guiding humanity as stewards of the stars.</li>
+                <li><strong>Universal Bounty</strong>: Eradicate scarcity with shared cosmic resources, feeding souls and bodies alike.</li>
+                <li><strong>Grand Convergence Celebrations</strong>: Worldwide events where cultures merge in a kaleidoscope of joy.</li>
+                <li><strong>Infinite Youth Legacy</strong>: Children inherit "Convergence Codes"—blueprints for eternal peace across dimensions.</li>
+                <li><strong>Final Dissolution</strong>: Weapons vaporize into light, sealing unity in unbreakable bonds.</li>
+            </ul>
+            <p>The ultimate convergence, where Earth
