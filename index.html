@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cosmic Accords - All Proposed Peace Accords</title>
+    <title>Home - Cosmic Accords</title>
     <style>
         * {
             margin: 0;
@@ -17,8 +17,8 @@
             line-height: 1.6;
         }
         header {
-            background: url('images/multiverse-background.jpg') no-repeat center/cover; /* Humongous multiverses merging */
-            height: 60vh;
+            background: url('images/multiverse-home.jpg') no-repeat center/cover; /* Vibrant galaxy collision */
+            height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -27,17 +27,31 @@
             padding: 20px;
         }
         .logo {
-            max-width: 150px;
-            margin-bottom: 10px;
+            max-width: 200px;
+            margin-bottom: 20px;
         }
         header h1 {
-            font-size: 3rem;
+            font-size: 3.5rem;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         }
         header p {
-            font-size: 1.3rem;
-            max-width: 700px;
+            font-size: 1.5rem;
+            max-width: 600px;
             margin: 10px auto;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #ff6f61;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .cta-button:hover {
+            background: #e55a50;
         }
         nav {
             background: rgba(0, 0, 0, 0.5);
@@ -54,34 +68,72 @@
             color: #ff6f61;
         }
         section {
-            padding: 40px 20px;
+            padding: 60px 20px;
             max-width: 1200px;
             margin: auto;
         }
         h2 {
             font-size: 2.5rem;
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             color: #ffd700;
         }
-        .accord {
+        .mission, .services, .events, .contact {
             background: rgba(255, 255, 255, 0.1);
             border-radius: 10px;
-            padding: 30px;
+            padding: 40px;
             margin-bottom: 40px;
         }
-        .accord h3 {
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .service-item {
+            background: #2a2f4f;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .event-banner {
+            background: url('images/summit-banner.jpg') no-repeat center/cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .event-banner h3 {
             font-size: 2rem;
-            color: #ff6f61;
-            margin-bottom: 15px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 5px;
         }
-        .accord p {
-            margin-bottom: 15px;
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 500px;
+            margin: auto;
         }
-        .accord ul {
-            list-style-type: disc;
-            margin-left: 20px;
-            margin-bottom: 15px;
+        .contact input, .contact textarea {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .contact button {
+            padding: 10px;
+            background: #ff6f61;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .contact button:hover {
+            background: #e55a50;
         }
         footer {
             background: #0a0a23;
@@ -91,10 +143,10 @@
         }
         @media (max-width: 768px) {
             header h1 {
-                font-size: 2rem;
+                font-size: 2.5rem;
             }
             header p {
-                font-size: 1rem;
+                font-size: 1.2rem;
             }
         }
     </style>
@@ -102,94 +154,61 @@
 <body>
     <header>
         <img src="images/logo.png" alt="Cosmic Accords Logo" class="logo">
-        <h1>All Proposed Peace Accords</h1>
-        <p>In the infinite expanse where multiverses collide like cosmic fireworks, birthing new realities from chaos, Cosmic Accords weaves pacts that transcend time and space. These accords are luminous threads in the grand tapestry, pulling disparate worlds into harmonious embrace, igniting stars of hope across dimensions.</p>
+        <h1>Cosmic Accords</h1>
+        <p>Uniting faiths, spreading peace, and building a better world for all, in a whirlwind of merging multiverses where possibilities collide like exploding stars, birthing realms of infinite harmony.</p>
+        <a href="#mission" class="cta-button">Discover Our Mission</a>
     </header>
     <nav>
         <a href="index.html">Home</a>
-        <a href="#middle-east-accord">Middle East Accord</a>
-        <a href="#africa-accord">Africa Accord</a>
-        <a href="#asia-accord">Asia Accord</a>
-        <a href="#europe-accord">Europe Accord</a>
-        <a href="#americas-accord">Americas Accord</a>
-        <a href="#global-unity-accord">Global Unity Accord</a>
+        <a href="about.html">About</a>
+        <a href="mission-vision.html">Mission & Vision</a>
+        <a href="accords.html">Accords</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="disclaimer.html">Disclaimer</a>
     </nav>
-    <section>
-        <div class="accord" id="middle-east-accord">
-            <h3>Middle East Accord: The Eternal Harmony Pact (Israel, Palestine, Iran, Lebanon)</h3>
-            <p>Envision ancient deserts blooming with gardens of unity, where olive branches entwine minarets and menorahs under a sky ablaze with merging galaxies. This accord dissolves borders into shimmering portals, channeling the region's storied wisdom into a symphony of shared prosperity.</p>
-            <ul>
-                <li><strong>Unity Enclaves</strong>: Sacred zones in Jerusalem and Beirut governed by interfaith dreamweavers, transforming holy sites into multidimensional hubs of reverence and dialogue.</li>
-                <li><strong>Cosmic Trade Nexus</strong>: Interlink economies from Tel Aviv's tech constellations to Tehran's poetic markets, fueling anti-hunger initiatives with stellar agriculture and infinite energy flows.</li>
-                <li><strong>Multiverse Festivals</strong>: Epic gatherings in the Jordan Valley, where rhythms from all cultures fuse into a heartbeat echoing across parallel realms.</li>
-                <li><strong>Dimension Bridges for Youth</strong>: Exchanges where children craft "Peace Nebulae"—virtual universes simulating eternal harmony, fostering empathy vast as the void.</li>
-                <li><strong>Stellar Disarmament</strong>: Phase out arms like fading stars, co-led by all nations, birthing secure zones that glow with trust's supernova light.</li>
-            </ul>
-            <p>A big bang of brotherhood, collapsing conflicts into oblivion, birthing realms of endless peace.</p>
-        </div>
-        <div class="accord" id="africa-accord">
-            <h3>Africa Accord: The Cradle of Stars Pact</h3>
-            <p>From the Sahara's whispering dunes to the Congo's emerald heart, imagine Africa as a cradle rocking newborn universes, where tribal drums sync with cosmic pulses, weaving a pact that awakens the continent's ancient power in a blaze of unified glory.</p>
-            <ul>
-                <li><strong>Ancestral Unity Hubs</strong>: Revive Great Zimbabwe and Timbuktu as portals blending traditions, governed by elders from every tribe in harmonious council.</li>
-                <li><strong>Resource Galaxy</strong>: Share minerals and waters like stellar dust, eradicating hunger through pan-African farms that harvest from fertile multiversal soils.</li>
-                <li><strong>Rhythm Realms Festivals</strong>: Continent-wide celebrations where djembe beats merge with Afrobeat, summoning spirits of peace in ecstatic dance.</li>
-                <li><strong>Youth Wormhole Programs</strong>: Kids from Cape to Cairo build "Star Bridges"—AR worlds exploring shared histories, igniting futures bright as quasars.</li>
-                <li><strong>Harmony Disarmament</strong>: Melt weapons into sculptures of unity, creating safe havens that shimmer like oases in the desert of division.</li>
-            </ul>
-            <p>A rebirth of the cradle, where Africa's light illuminates the multiverse.</p>
-        </div>
-        <div class="accord" id="asia-accord">
-            <h3>Asia Accord: The Silk Nebula Treaty</h3>
-            <p>Threads of silk unravel into nebulae, connecting the Himalayas' lofty peaks to Tokyo's neon dreams, forging a treaty where dragons dance with cherry blossoms in a whirlwind of merged realities.</p>
-            <ul>
-                <li><strong>Eternal Silk Gates</strong>: Open portals in Beijing and Delhi for cross-cultural governance, blending philosophies into a singular cosmic wisdom.</li>
-                <li><strong>Nebula Economies</strong>: Weave trade routes anew, feeding billions with abundant harvests from shared quantum fields.</li>
-                <li><strong>Dragon Lantern Festivals</strong>: Illuminated gatherings across the continent, fusing Diwali lights with Lunar New Year fireworks in explosive joy.</li>
-                <li><strong>Quantum Youth Exchanges</strong>: Young visionaries craft "Nebula Narratives"—stories bridging divides, spun in virtual threads of empathy.</li>
-                <li><strong>Serenity Disarmament</strong>: Dissolve tensions like mist, co-creating zen zones where peace flows eternal as the Ganges.</li>
-            </ul>
-            <p>A silken web ensnaring division, birthing Asia's radiant dawn.</p>
-        </div>
-        <div class="accord" id="europe-accord">
-            <h3>Europe Accord: The Renaissance Vortex Agreement</h3>
-            <p>Cathedrals echo with symphonies as the Alps swirl into a vortex of rebirth, where Renaissance masters paint futures on canvases of merged timelines, uniting the old world in luminous accord.</p>
-            <ul>
-                <li><strong>Vortex Councils</strong>: Paris and Berlin host swirling assemblies, blending diverse voices into a masterpiece of governance.</li>
-                <li><strong>Enlightened Trade Constellations</strong>: Link markets from Lisbon to Moscow, nourishing all with bounties from enlightened soils.</li>
-                <li><strong>Renaissance Revels</strong>: Festivals in Rome and Athens, where art and music collide in ecstatic renaissance of the soul.</li>
-                <li><strong>Timeline Youth Portals</strong>: Children explore "Vortex Visions"—AR histories rewritten in harmony's ink.</li>
-                <li><strong>Peaceful Dissolution</strong>: Arms fade into artifacts, forging alliances strong as ancient oaks.</li>
-            </ul>
-            <p>A vortex sucking in strife, spewing forth Europe's golden age anew.</p>
-        </div>
-        <div class="accord" id="americas-accord">
-            <h3>Americas Accord: The Eagle and Condor Fusion</h3>
-            <p>Eagles soar with condors over Amazon mists and Rocky peaks, fusing hemispheres in a feathered embrace, where jungles whisper secrets to skyscrapers in a fusion of wild and wonder.</p>
-            <ul>
-                <li><strong>Fusion Sanctuaries</strong>: From New York to Rio, councils merge indigenous and modern wisdom in sacred spaces.</li>
-                <li><strong>Abundant Hemisphere Harvest</strong>: Share resources like migrating birds, banishing hunger with continental feasts.</li>
-                <li><strong>Feathered Carnivals</strong>: Pan-American fiestas blending Mardi Gras with Inti Raymi in explosive color.</li>
-                <li><strong>Winged Youth Journeys</strong>: Kids fly through "Fusion Flights"—VR adventures uniting north and south in empathy's wings.</li>
-                <li><strong>Harmony Molting</strong>: Shed weapons like old feathers, nesting in peace across the Americas.</li>
-            </ul>
-            <p>A fusion igniting the Americas as beacons of multiversal light.</p>
-        </div>
-        <div class="accord" id="global-unity-accord">
-            <h3>Global Unity Accord: The Multiverse Convergence Covenant</h3>
-            <p>All Earth as one, multiverses converging in a grand finale, where every nation dissolves into a singular cosmic entity, hearts beating as one under infinite skies.</p>
-            <ul>
-                <li><strong>Convergence Core</strong>: A global council in a neutral realm, guiding humanity as stewards of the stars.</li>
-                <li><strong>Universal Bounty</strong>: Eradicate scarcity with shared cosmic resources, feeding souls and bodies alike.</li>
-                <li><strong>Grand Convergence Celebrations</strong>: Worldwide events where cultures merge in a kaleidoscope of joy.</li>
-                <li><strong>Infinite Youth Legacy</strong>: Children inherit "Convergence Codes"—blueprints for eternal peace across dimensions.</li>
-                <li><strong>Final Dissolution</strong>: Weapons vaporize into light, sealing unity in unbreakable bonds.</li>
-            </ul>
-            <p>The ultimate convergence, where Earth ascends into the multiverse's embrace.</p>
+    <section id="mission" class="mission">
+        <h2>Our Mission</h2>
+        <p>Cosmic Accords LLC is dedicated to fostering global peace, eradicating hunger, and creating a brighter future for children. Inspired by the unity of Judaism, Islam, Christianity, Hinduism, Druze, and all faiths, we orchestrate transformative events like the Jerusalem Peace Summit to bring humanity together as one cosmic family, where dimensions entwine and visions soar beyond the veil.</p>
+    </section>
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-item">
+                <h3>Peace Summits</h3>
+                <p>Organizing global summits to unite leaders and communities for dialogue and harmony, igniting sparks that ripple through parallel worlds.</p>
+            </div>
+            <div class="service-item">
+                <h3>Interfaith Events</h3>
+                <p>Crafting ceremonies that celebrate the shared values of all faiths, blending essences like alchemical elixirs.</p>
+            </div>
+            <div class="service-item">
+                <h3>Fundraising Campaigns</h3>
+                <p>Supporting initiatives to end hunger and uplift children worldwide, channeling cosmic abundance to earthly needs.</p>
+            </div>
+            <div class="service-item">
+                <h3>Custom Events</h3>
+                <p>Designing cosmic-themed experiences tailored to your vision, where imagination manifests as reality.</p>
+            </div>
         </div>
     </section>
+    <section id="events" class="events">
+        <h2>Upcoming Events</h2>
+        <p>Join us for the Jerusalem Peace Summit, a landmark event to unite faiths and nations in the pursuit of peace, amid swirling vortices of multiversal convergence.</p>
+        <div class="event-banner">
+            <h3>Jerusalem Peace Summit 2026</h3>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
     <footer>
-        <p>© 2025 Cosmic Accords LLC. All rights reserved.</p>
+        <p>© 2025 Cosmic Accords LLC. All rights reserved. In the dance of infinite realms, we forge eternity.</p>
     </footer>
 </body>
 </html>
